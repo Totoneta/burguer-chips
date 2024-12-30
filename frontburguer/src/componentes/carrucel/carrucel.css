@@ -1,0 +1,64 @@
+/* navbar --> nabvar.js */
+.container-navbar {
+    margin-bottom: 0;
+}
+
+.index-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.carrucel-container{
+    position: static;
+    width: 80rem;
+    height: auto;
+    overflow-x: auto;  
+    border-radius: 5px;  
+    scroll-behavior: smooth;
+    z-index: -1;
+
+}
+
+.carrucel{
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    position: static;
+}
+
+.carrucel-container::-webkit-scrollbar{
+    display: none;
+}
+
+.carrucel>img{
+    flex: 0 0 auto;
+    width: 80rem;
+    height: 30rem; 
+}
+
+.botones{
+    position: absolute;
+    top: 19rem;
+    width: 82rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.botones>img{
+    background-color: red;
+    border-radius: 999px;
+    height: 3rem;
+    width: 3rem;
+    position: static;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.botones>img:hover{
+    background-color: #8c0202;
+}
+
