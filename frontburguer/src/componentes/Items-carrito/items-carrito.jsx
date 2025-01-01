@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
-import {eliminarProducto} from './../../redux/carritoslice'
-import React from 'react';
+import { eliminarProducto, vaciarCarrito } from './../../redux/carritoslice'
+import './items-carrito.css'
 
 export function ItemsCart({ openmenu }) {
-  
+
   const dispatch = useDispatch()
-  
-  const { cantidadProductos, productosCarrito } = useSelector(state => state.carrito);
+
+  const { cantidadProductos, productosCarrito, totalCompra } = useSelector(state => state.carrito);
 
   return (
     <div className="cart-container">
@@ -31,6 +31,11 @@ export function ItemsCart({ openmenu }) {
               <h1>EMPTY CART</h1>
             </li>
           )}
+          <div className="containeritemscartbtns">
+            <button className='vaciar-cart' onClick={() => dispatch(vaciarCarrito())} >Vaciar Carrito</button>
+            <span>${totalCompra}</span>
+            <button className='pagar-cart'>Comprar</button>
+          </div>
         </ul>
 
       ) : (

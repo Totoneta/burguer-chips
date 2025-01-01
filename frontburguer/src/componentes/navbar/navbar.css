@@ -1,10 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .container-navbar {
     position: relative;
     z-index: 1;
@@ -19,6 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .nav-list>a {
@@ -49,7 +44,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     height: 100%;
     border-bottom: 2px solid transparent;
     transition-property: border;
@@ -90,106 +85,5 @@
     background-color: red;
 }
 
-.cart-container{
-    position: absolute;
-    right: 1rem;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 5px;
-    background-color:#fff785;
-}
-
-.cart{
-    border: 1.5px solid #000;
-}
-
-.item-cart{
-    background: linear-gradient(to right, #fff785 30%, #ffffff);
-    height: 6rem;
-    width: 23rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-
-}
-
-.item-cart>img{
-    width: 7rem;
-    height: 5.5rem;
-    margin-left: .2rem;
-}
-
-/* Item cart Text */
-.item-cart-text{
-    font-size: .8rem;
-    margin-left: .5rem;
-}
-
-
-/* Item cart buttons */
-.item-cart-btns{
-    height: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem;
-}
-
-.item-cart-btns>button{
-    padding: .4rem;
-    cursor: pointer;
-    background-color: #f44b4b;
-    border: 1px solid #000;
-    color: #fff;
-    border-radius: 3px;
-}
-
-.item-cart-btns>button:hover{
-    background-color: red;
-}
-
-/* Carrito vacío */
-.cart-vacio{
-    height: 3rem;
-    width: 23rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .3rem;
-}
-
-/* Botones Bottom Carrito */
-.btns-cart-vaciar-pagar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.btns-cart-vaciar-pagar>span{
-    color: #0a6f0a;
-    font-weight: bold;
-}
-
-.vaciar-cart,
-.pagar-cart{
-    padding: .3rem;
-    margin: .5rem;
-    cursor: pointer;
-    background-color: #f44b4b;
-    border: 1px solid #000;
-    color: #fff;
-    border-radius: 3px;
-}
-
-.vaciar-cart:hover,
-.pagar-cart:hover{
-    background-color: red;
-}
 
 

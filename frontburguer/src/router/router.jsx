@@ -1,8 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-/* Contexto */
-import { CarritoContext } from './../contextos/carrito-context';
-
 /* Componentes */
 import Navbar from './../componentes/navbar/navbar'
 import Footer from './../componentes/footer/footer';
@@ -17,7 +14,6 @@ export default function Router() {
     return (
 
         <BrowserRouter>
-            <CarritoContext>
 
                 <Navbar />
                 <Routes>
@@ -27,7 +23,6 @@ export default function Router() {
                 </Routes>
                 <Footer />
 
-            </CarritoContext>
         </BrowserRouter>
 
     )
