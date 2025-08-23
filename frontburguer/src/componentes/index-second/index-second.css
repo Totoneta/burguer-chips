@@ -5,14 +5,13 @@
 }
 
 .index-second {
-    padding-top: 4rem;
     color: #fff;
-    margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     overflow: hidden;
+    gap: 10rem;
 }
 
 .index-second>img {
@@ -21,9 +20,13 @@
 
 .bienvenida {
     text-align: left;
-    width: 35rem;
+    width: 55rem;
     position: static;
     z-index: 1;
+    background-color: #8d0000;
+    border-radius: 999px;
+    padding: 5rem 8rem;
+
 }
 
 .bienvenida>h1 {
@@ -33,14 +36,4 @@
 .bienvenida>p {
     font-size: 1.1rem;
     font-weight: bold;
-}
-
-.fondo {
-    background-color: red;
-    width: 62rem;
-    height: 35rem;
-    border-radius: 999px;
-    position: absolute;
-    left: -17rem;
-    z-index: 0;
 }

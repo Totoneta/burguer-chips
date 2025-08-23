@@ -1,35 +1,36 @@
 .container-navbar {
-    position: relative;
-    z-index: 1;
     width: 100%;
     background-color: #fff677;
-    height: 3rem;
+    height: 4rem;
     box-shadow: 0px 1px 8px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.container-navbar>a>img {
+    height: 3rem;
 }
 
 .nav-list {
-    height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
+    justify-content: center;
+    width: max-content;
+    gap: 3rem;
 }
 
 .nav-list>a {
     display: flex;
     align-items: center;
-}
-
-.nav-list>a>img {
-    height: 3rem;
+    justify-content: center;
 }
 
 .nav-item {
     list-style: none;
     display: flex;
     justify-content: center;
-    width: auto;
 }
 
 .nav-item-carrito {
@@ -58,7 +59,7 @@
 /* Carrito */
 
 .carrito-img-navbar {
-    height: 2.5rem;
+    height: 2.2rem;
     cursor: pointer;
 }
 
@@ -75,14 +76,19 @@
 }
 
 .cart-navbar-menu>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     position: absolute;
-    top: 1.4rem;
+    top: 2.5rem;
+    right:2rem;
     border-radius: 50%;
     width: 1.3rem;
     height: 1.3rem;
     text-align: center;
-    background-color: red;
+    font-weight: bold;
+    background-color: #8d0000;
 }
 
 

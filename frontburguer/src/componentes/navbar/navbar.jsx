@@ -10,6 +10,7 @@ export default function Navbar() {
 
     const { cantidadProductos } = useSelector(state => state.carrito)
 
+    //Menu DropDown
     const ShowHideMenu = () => {
         setOpenMenu(!openmenu)
     }
@@ -17,9 +18,8 @@ export default function Navbar() {
 
     return (
         <nav className="container-navbar">
+            <Link to="/"><img src="LOGO-B.png" alt='Logo' /></Link>
             <ul className="nav-list">
-
-                <Link to="/"><img src="LOGO-B.png" alt='Logo' /></Link>
 
                 <li className="nav-item"><Link to="/">Inicio</Link></li>
 

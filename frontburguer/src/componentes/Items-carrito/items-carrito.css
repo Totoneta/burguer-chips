@@ -2,7 +2,7 @@
 .cart-container{
     position: absolute;
     right: 1rem;
-    top: 3rem;
+    top: 4rem;
     list-style: none;
     display: flex;
     align-items: center;
@@ -14,6 +14,8 @@
 
 .cart{
     border: 1.5px solid #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .item-cart{
@@ -53,14 +55,14 @@
 .item-cart-btns>button{
     padding: .4rem;
     cursor: pointer;
-    background-color: #f44b4b;
+    background-color: #8d0000;
     border: 1px solid #000;
     color: #fff;
     border-radius: 3px;
 }
 
 .item-cart-btns>button:hover{
-    background-color: red;
+    background-color: #f44b4b;
 }
  
 /* Carrito vacío */
@@ -82,7 +84,7 @@
 }
 
 .containeritemscartbtns>span{
-    color: #0a6f0a;
+    color: #00ab00;
     font-weight: bold;
 }
 
@@ -91,7 +93,7 @@
     padding: .3rem;
     margin: .5rem;
     cursor: pointer;
-    background-color: #f44b4b;
+    background-color: #8d0000;
     border: 1px solid #000;
     color: #fff;
     border-radius: 3px;
@@ -99,5 +101,5 @@
 
 .vaciar-cart:hover,
 .pagar-cart:hover{
-    background-color: red;
+    background-color: #f44b4b;
 }
