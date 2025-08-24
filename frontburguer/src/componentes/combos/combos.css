@@ -1,17 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
-
 /* Pagina */
-.cont-prod-mayor>h2{
-    text-align: center;
-    color: #000;
-    padding: .5rem;
-    font-size: 3rem;
-    background: linear-gradient(transparent, #fff);
-    width: 100%;
-}
-
 .productos-cont {
     width: 100%;
     text-align: center;
@@ -33,47 +20,9 @@ html {
     border-bottom: 3px solid #000;
 }
 
-.burguers-t {
-    color: #000;
-    margin: .5rem;
-    padding: .5rem;
-    font-size: 2rem;
-    text-align: center;
-    width: auto;
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
-}
-
-.bebidas-t {
-    color: #000;
-    margin: .5rem;
-    padding: .5rem;
-    font-size: 2rem;
-    text-align: center;
-    width: auto;
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
-}
 
 
 /* Contenedores de tarjetas */
-
-.burguers {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.bebidas {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
 .combos {
     display: grid;
     grid-template-columns: 50% 50%;

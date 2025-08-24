@@ -3,9 +3,30 @@ import "./carrucel.css"
 
 function Carrucel() {
 
+    const imgs = [
+        {
+            id: 50,
+            path: '/carrucel1.jpg',
+            nombre: 'Burguer',
+        },
+        {
+            id: 51,
+            path: '/carrucel2.jpg',
+            nombre: 'Burguer',
+        },
+        {
+            id: 52,
+            path: '/carrucel3.jpg',
+            nombre: 'Burguer',
+        },
+        {
+            id: 53,
+            path: '/carrucel4.jpg',
+            nombre: 'Burguer',
+        },
+    ]
+
     const [index, setIndex] = useState(0); 
-
-
 
     return (
         <section className="index-first">
@@ -16,9 +37,13 @@ function Carrucel() {
                 
             <div className="carrucel-container" >
                 <div className="carrucel">
-                    <img src="/carrucel1.jpg" alt="Hamburguesa" />
-                    <img src="/carrucel4.jpg" alt="Hamburguesa" />
-                    <img src="/carrucel2.jpg" alt="Hamburguesa" />
+                    {
+                        imgs.map((img) => {
+                            return(
+                                <img key={img.id} src={img.path} alt={img.nombre} />
+                            )
+                        })
+                    }
                 </div>
             </div>
         </section>

@@ -1,17 +1,17 @@
+/* Components */
 import Navbar from './componentes/Navbar/navbar.js';
-import Index from './pages/index-carr-indsec/index-carr-indsec.js';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Productos from './pages/productos-page/productos.js';
 import Footer from './componentes/footer/footer.js';
-import { CarritoContext } from './contextos/carrito-context.js';
-
+/* Router Dom */
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+/* Pages */
+import Index from '../../pages/index-page.jsx';
+import Productos from '../../pages/productos-page.jsx';
 
 export default function App() {
 
     return (
 
         <BrowserRouter>
-            <CarritoContext>
 
                 <Navbar />
                 <Routes>
@@ -20,9 +20,7 @@ export default function App() {
                     <Route path="/Productos" element={<Productos />} />
                 </Routes>
                 <Footer />
-
-            </CarritoContext>
+                
         </BrowserRouter>
-
     )
 }

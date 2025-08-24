@@ -13,7 +13,7 @@
 
 .carrucel-container{
     position: static;
-    width: 95%;
+    width: 80%;
     height: auto;
     overflow-x: auto;  
     border-radius: 5px;  
@@ -42,7 +42,7 @@
 .botones{
     position: absolute;
     top: 30rem;
-    width: 96%;
+    width: 82%;
     display: flex;
     justify-content: space-between;
     z-index: 0;

@@ -16,16 +16,20 @@
 
 .index-second>img {
     width: 35rem;
+    animation: Rotacion 10s ease-in-out 1s 1;
 }
 
 .bienvenida {
     text-align: left;
-    width: 55rem;
-    position: static;
-    z-index: 1;
+    width: 70rem;
     background-color: #8d0000;
     border-radius: 999px;
-    padding: 5rem 8rem;
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
 
 }
 
@@ -36,4 +40,19 @@
 .bienvenida>p {
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+/* Animaciones */
+@keyframes Rotacion {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }

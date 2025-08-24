@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
-import combos from "../../data-json/combos.json";
+import {combos} from "../../data-json/combos.jsx";
 import  {agregarProducto}  from './../../redux/carritoslice'
-import React from "react";
+import './combos.css'
 
 function Combos() {
 
@@ -18,7 +18,7 @@ function Combos() {
       <div className='combos'>
         {combos.map((elemento) => (
           <div key={elemento.id} className="tarjeta" id={elemento.id}>
-            <img src={elemento.img} alt={elemento.titulo} />
+            <img src={elemento.path} alt={elemento.titulo} />
             <div className="tarjeta-cont">
               <div className="texto-tarjeta">
                 <h3>{elemento.titulo}</h3>

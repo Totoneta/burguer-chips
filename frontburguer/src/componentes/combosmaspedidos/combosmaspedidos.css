@@ -1,0 +1,95 @@
+.combosmaspedidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Button ver mas combos */
+.combosmaspedidos>a {
+    padding: 3rem 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #8d0000;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all .5s;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.combosmaspedidos>a:hover {
+    width: 70%;
+}
+
+/* List Container */
+.maspedidoscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    width: 70%;
+}
+
+/* Card */
+.maspedidoscard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 30rem;
+    width: 33%;
+    background-color: #ffffff56;
+    box-shadow: 0px 0px 8px #000;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+}
+
+.maspedidoscard>img {
+    height: 50%;
+    border-radius: 10px;
+}
+
+/* Card Text */
+.maspedidoscardtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    height: 100%;
+}
+
+.maspedidoscardtext>h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8d0000;
+}
+
+/* Desc y Price */
+.maspedidoscardtextdescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.maspedidoscardtextdescription>p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.maspedidoscardtextdescription>span {
+    font-size: 23px;
+    color: #00ab00;
+    font-weight: bold;
+}

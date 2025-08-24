@@ -1,37 +1,37 @@
-[
+export const combos = [
     {
-        "id": "9",
-        "titulo": "Burguer Americana",
+        "id": "1",
+        "titulo": "2 Burguer Americana, 2 Papas y 2 Bebidas",
         "descripcion": "Carne jugosa, queso derretido, lechuga crujiente, tomate fresco, cebolla, pepinillos, ketchup, mostaza, en pan tostado.",
-        "precio": 10000,
-        "img": "/burguer.jpg"
+        "precio": 22000,
+        "path": "/combos5.jpg"
     },
     {
-        "id": "10",
-        "titulo": "Burguer Vikinga",
+        "id": "2",
+        "titulo": "4 Burguer Vikinga, 4 Papas y 4 Bebidas",
         "descripcion": "Champiñones salteados, queso, cebolla caramelizada, lechuga fresca, tomate, pepinillos, salsa especial, en pan tostado.",
-        "precio": 9700,
-        "img": "/burguer2.jpg"
+        "precio": 35500,
+        "path": "/combos4.jpg"
     },
     {
-        "id": "11",
-        "titulo": "Burguer Crispi",
+        "id": "3",
+        "titulo": "3 Burguer Crispi, 3 Papas y 3 Bebidas",
         "descripcion": "Lechuga crujiente, tomate fresco, queso derretido, cebolla, pepinillos, salsa especial, en pan crocante.",
-        "precio": 5400,
-        "img": "/burguer3.jpg"
+        "precio": 30800,
+        "path": "/combos3.jpg"
     },
     {
-        "id": "12",
-        "titulo": "Burguer Fire",
+        "id": "4",
+        "titulo": "2 Burguer Fire, 2 Papas y 2 Bebidas",
         "descripcion": "Jalapeños picantes, queso cheddar, lechuga fresca, tomate, cebolla, salsa de chipotle, en pan tostado.",
-        "precio": 12500,
-        "img": "/burguer4.jpg"
+        "precio": 28000,
+        "path": "/combos.jpg"
     },
     {
-        "id": "13",
-        "titulo": "Burguer Latina",
+        "id": "5",
+        "titulo": "5 Burguer Latina, 5 Papas y 5 Bebidas",
         "descripcion": "Guacamole, queso Monterrey Jack, lechuga fresca, tomate, cebolla morada, jalapeños, salsa de chipotle, en pan tostado.",
-        "precio": 10000,
-        "img": "/burguer5.jpg"
+        "precio": 41200,
+        "path": "/combos2.jpg"
     }
 ]
