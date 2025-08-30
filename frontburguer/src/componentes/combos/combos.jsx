@@ -28,10 +28,10 @@ function Combos() {
                 <button
                   onClick={() => {HandleCombos(elemento)}}
                   aria-label={`Agregar ${elemento.titulo} al carrito`}>
-                  <img
-                    src="/add-carrito.svg"
-                    alt="Carrito"
-                  />
+                  <i className='bxr  bx-cart-plus'  ></i> 
+                </button>
+                <button>
+                  <i className='bxr  bx-heart corazon'  ></i> 
                 </button>
               </div>
             </div>

@@ -19,7 +19,6 @@
     border-radius: 5px;
     scroll-behavior: smooth;
     z-index: -1;
-
 }
 
 .carrucel {
@@ -66,14 +65,21 @@
 
 /* Responsive */
 @media (min-width: 350px) and (max-width: 499px) {
+.carrucel-container {
+    width: 93%;
+}
+    .carrucel>img {
+        height: 15rem;
+    }
+
     .botones {
-        top: 9rem;
-        width: 85%;
+        top: 11rem;
+        width: 96%;
     }
 
     .botones>img {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.8rem;
+        width: 1.8rem;
     }
 }
 

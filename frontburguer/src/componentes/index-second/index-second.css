@@ -55,15 +55,16 @@
 @media (min-width: 350px) and (max-width: 499px) {
 .index-second {
         gap: .5rem;
+        padding: 1rem 0;
     }
 
     .index-second>img {
-        width: 8rem;
+        width: 9rem;
     }
 
     .bienvenida {
-        width: 15rem;
-        padding: 2rem;
+        width: 13rem;
+        padding: 2rem 3rem;
         gap: .3rem;
     }
 
