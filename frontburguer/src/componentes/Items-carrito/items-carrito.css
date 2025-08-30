@@ -1,24 +1,24 @@
-
-.cart-container{
+.cart-container {
     position: absolute;
     right: 1rem;
-    top: 4rem;
+    top: 4.2rem;
+    z-index: 10;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 5px;
-    background-color:#fff785;
+    background-color: #fff785;
 }
 
-.cart{
-    border: 1.5px solid #000;
+.cart {
+    box-shadow: 0px 1px 3px #000;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.item-cart{
+.item-cart {
     background: linear-gradient(to right, #fff785 30%, #ffffff);
     height: 6rem;
     width: 23rem;
@@ -29,21 +29,21 @@
 
 }
 
-.item-cart>img{
+.item-cart>img {
     width: 7rem;
     height: 5.5rem;
     margin-left: .2rem;
 }
 
 /* Item cart Text */
-.item-cart-text{
+.item-cart-text {
     font-size: .8rem;
     margin-left: .5rem;
 }
 
 
 /* Item cart buttons */
-.item-cart-btns{
+.item-cart-btns {
     height: 6rem;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
     margin: 1rem;
 }
 
-.item-cart-btns>button{
+.item-cart-btns>button {
     padding: .4rem;
     cursor: pointer;
     background-color: #8d0000;
@@ -61,12 +61,12 @@
     border-radius: 3px;
 }
 
-.item-cart-btns>button:hover{
+.item-cart-btns>button:hover {
     background-color: #f44b4b;
 }
- 
+
 /* Carrito vacío */
-.cart-vacio{
+.cart-vacio {
     height: 3rem;
     width: 23rem;
     display: flex;
@@ -76,20 +76,20 @@
 }
 
 /* Botones comprar vaciar carrito */
-.containeritemscartbtns{
+.containeritemscartbtns {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.containeritemscartbtns>span{
+.containeritemscartbtns>span {
     color: #00ab00;
     font-weight: bold;
 }
 
 .vaciar-cart,
-.pagar-cart{
+.pagar-cart {
     padding: .3rem;
     margin: .5rem;
     cursor: pointer;
@@ -100,6 +100,60 @@
 }
 
 .vaciar-cart:hover,
-.pagar-cart:hover{
+.pagar-cart:hover {
     background-color: #f44b4b;
+}
+
+/* Responsive */
+@media (min-width: 350px) and (max-width: 499px) {
+    .cart-container {
+        right: .1rem;
+        top: 3rem;
+        font-size: 8px;
+    }
+
+    .item-cart {
+        height: 6rem;
+        width: 20rem;
+    }
+
+    /* Item cart Text */
+    .item-cart-text {
+        font-size: 8px;
+        width: 7.5rem;
+    }
+
+    /* Item cart buttons */
+    .item-cart-btns {
+        margin: .5rem;
+    }
+
+    .item-cart-btns>button {
+        font-size: 10px;
+    }
+
+    /* Carrito vacío */
+    .cart-vacio {
+        height: 3rem;
+        width: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .3rem;
+    }
+
+    /* Botones comprar vaciar carrito */
+    .vaciar-cart,
+    .pagar-cart {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+
+    .cart-container {
+        right: .3rem;
+        top: 3rem;
+    }
+
 }

@@ -38,7 +38,7 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     gap: 1rem;
     border: 2px solid #fff;
@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: .5rem;
     cursor: pointer;
 }
 
@@ -65,4 +66,70 @@
 
 .red>span {
     font-size: 18px;
+}
+
+/* Responsive */
+@media (min-width: 350px) and (max-width: 499px) {
+    .footer {
+        gap: .5rem;
+    }
+
+    .footer>img {
+        width: 6rem;
+    }
+
+    /* Sobre Nosotros */
+    .sobre-nos {
+        width: 10rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .sobre-nos>h3 {
+        font-size: 12px;
+    }
+
+    .sobre-nos>p {
+        font-size: 6px;
+    }
+
+    /* Redes Sociales */
+    .redes {
+        width: 6rem;
+        padding: 1rem .5rem;
+    }
+    .red>img {
+        height: 1rem;
+    }
+
+    .red>span {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .footer {
+        gap: 1rem;
+    }
+
+    .footer>img {
+        width: 10rem;
+    }
+
+    /* Sobre Nosotros */
+    .sobre-nos {
+        width: 20rem;
+    }
+
+    .sobre-nos>h3 {
+        font-size: 18px;
+    }
+
+    .sobre-nos>p {
+        font-size: 11px;
+    }
+
+    /* Redes Sociales */
+    .red>span {
+        font-size: 16px;
+    }
 }

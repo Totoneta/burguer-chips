@@ -3,7 +3,7 @@
     margin-bottom: 0;
 }
 
-.index-first{
+.index-first {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,35 +11,35 @@
     margin: 2rem auto;
 }
 
-.carrucel-container{
+.carrucel-container {
     position: static;
     width: 80%;
     height: auto;
-    overflow-x: auto;  
-    border-radius: 5px;  
+    overflow-x: auto;
+    border-radius: 5px;
     scroll-behavior: smooth;
     z-index: -1;
 
 }
 
-.carrucel{
+.carrucel {
     width: auto;
     display: flex;
     flex-wrap: nowrap;
     position: static;
 }
 
-.carrucel-container::-webkit-scrollbar{
+.carrucel-container::-webkit-scrollbar {
     display: none;
 }
 
-.carrucel>img{
+.carrucel>img {
     flex: 0 0 auto;
     width: 100%;
-    max-height: 50rem; 
+    max-height: 50rem;
 }
 
-.botones{
+.botones {
     position: absolute;
     top: 30rem;
     width: 82%;
@@ -48,7 +48,7 @@
     z-index: 0;
 }
 
-.botones>img{
+.botones>img {
     background-color: #8d0000;
     border-radius: 999px;
     height: 4rem;
@@ -59,8 +59,44 @@
     transition: all .3s;
 }
 
-.botones>img:hover{
+.botones>img:hover {
     background-color: #f44b4b;
     scale: 110%;
 }
 
+/* Responsive */
+@media (min-width: 350px) and (max-width: 499px) {
+    .botones {
+        top: 9rem;
+        width: 85%;
+    }
+
+    .botones>img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .botones {
+        top: 14rem;
+        width: 85%;
+    }
+
+    .botones>img {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1370px) {
+    .botones {
+        top: 20rem;
+        width: 83%;
+    }
+
+    .botones>img {
+        height: 3rem;
+        width: 3rem;
+    }
+}

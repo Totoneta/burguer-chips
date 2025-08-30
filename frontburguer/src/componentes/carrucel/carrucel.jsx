@@ -26,20 +26,31 @@ function Carrucel() {
         },
     ]
 
-    const [index, setIndex] = useState(0); 
+    const [index, setIndex] = useState(0);
+
+    const siguienteImg = () => {
+        setIndex((i) => (i === 0 ? imgs.length - 1 : i - 1));
+    }
+
+    const anteriorImg = () => {
+        setIndex((i) => (i === imgs.length - 1 ? 0 : i + 1))
+    }
 
     return (
         <section className="index-first">
-                <div className="botones">
-                    <img className="btn-left" src="/arrow-left.svg" alt="Flecha Izquierda" />
-                    <img className="btn-right" src="/arrow-right.svg" alt="Flecha Izquierda" />
-                </div>
-                
+            <div className="botones">
+                <img className="btn-left" onClick={anteriorImg} src="/arrow-left.svg" alt="Flecha Izquierda" />
+                <img className="btn-right" onClick={siguienteImg} src="/arrow-right.svg" alt="Flecha Izquierda" />
+            </div>
+
             <div className="carrucel-container" >
-                <div className="carrucel">
+                <div
+                    className="carrucel"
+                    style={{ transform: `translateX(-${index * 100}%)` }}
+                >
                     {
                         imgs.map((img) => {
-                            return(
+                            return (
                                 <img key={img.id} src={img.path} alt={img.nombre} />
                             )
                         })

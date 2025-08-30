@@ -14,7 +14,6 @@ function Combos() {
 
   return (
     <div className='productos-cont'>
-      <h2 className='combos-t'>COMBOS</h2>
       <div className='combos'>
         {combos.map((elemento) => (
           <div key={elemento.id} className="tarjeta" id={elemento.id}>

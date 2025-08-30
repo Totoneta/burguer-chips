@@ -15,7 +15,7 @@ export function ItemsCart({ openmenu }) {
           {cantidadProductos > 0 ? (
             productosCarrito.map((item) => (
               <li key={item.id} className="item-cart">
-                <img src={item.img} alt={item.titulo} />
+                <img src={item.path} alt={item.titulo} />
                 <div className="item-cart-text">
                   <h3>{item.titulo}</h3>
                   <span>${item.precio}</span>

@@ -21,9 +21,9 @@ export default function Navbar() {
             <Link to="/"><img src="LOGO-B.png" alt='Logo' /></Link>
             <ul className="nav-list">
 
-                <li className="nav-item"><Link to="/">Inicio</Link></li>
+                <li className="nav-item"><Link to="/">INICIO</Link></li>
 
-                <li className="nav-item"><Link to="/Productos">Productos</Link></li>
+                <li className="nav-item"><Link to="/Productos">PRODUCTOS</Link></li>
 
                 <li className="nav-item-carrito" >
 
